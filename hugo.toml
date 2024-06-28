@@ -1,4 +1,5 @@
-baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+# Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+baseurl = "https://miraitech.github.io/" 
 title = "Mirai Tech"
 theme = "hugo-universal-theme"
 # themesDir = "../.."
@@ -15,7 +16,7 @@ disqusShortname = "guest"
 googleAnalytics = ""
 
 # number of words of summarized post content (default 70)
-summaryLength = 50
+summaryLength = 30
 
 # Define the number of posts per page
 paginate = 5
@@ -345,7 +346,7 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 5
     name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
+    url = ""
     pre = "<i class='fab fa-2x fa-github'></i>"
 
 
@@ -468,7 +469,7 @@ pluralizelisttitles = false
 
 [params.features]
     enable = true
-    cols = 3 # Default: 3, Available values 2,3,4,6
+    cols = 3     # Default: 3, Available values 2,3,4,6
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more information take a look at the README.
@@ -499,7 +500,7 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    hide_summary = true
+    hide_summary = false
     title = "お知らせ"
     subtitle = ""
 
