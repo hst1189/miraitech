@@ -78,69 +78,83 @@ pluralizelisttitles = false
     post       = 2
 
 [[menu.main]]
-    name       = "事業①"
+    name       = "インターネット・Web"
     url        = ""
     weight     = 1
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業②"
+    name       = "通信・無線"
     url        = ""
     weight     = 2
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業③"
+    name       = "仮想・インフラ構築"
     url        = ""
     weight     = 3
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業④"
+    name       = "ITコンサルティング"
     url        = ""
     weight     = 4
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業⑤"
+    name       = "アウトソーシング（SES）"
     url        = ""
     weight     = 5
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業⑥"
+    name       = "システム構築"
     url        = ""
     weight     = 6
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業⑦"
+    name       = "ソフトウェア開発・保守"
     url        = ""
     weight     = 7
     parent     = "section.shortcodes"
 
 [[menu.main]]
-    name       = "事業⑧"
+    name       = "UI／UXデザイン等"
     url        = ""
     weight     = 8
     parent     = "section.shortcodes"
 
+
+
 [[menu.main]]
-    name       = "サービス①"
+    name       = "SNSマーケティング"
     url        = ""
     weight     = 1
     parent     = "section.headervariations"
 
 [[menu.main]]
-    name       = "サービス②"
+    name       = "SEO／SEM適合"
     url        = ""
     weight     = 2
     parent     = "section.headervariations"
 
 [[menu.main]]
-    name       = "サービス③"
+    name       = "ヘルプデスク"
     url        = ""
     weight     = 3
+    parent     = "section.headervariations"
+
+[[menu.main]]
+    name       = "PCレンタル"
+    url        = ""
+    weight     = 4
+    parent     = "section.headervariations"
+
+[[menu.main]]
+    name       = "オフィスデザイン等"
+    url        = ""
+    weight     = 5
     parent     = "section.headervariations"
 
 
@@ -235,11 +249,11 @@ pluralizelisttitles = false
     parent     = "menu.portfolio"
     post       = 2
 
-[[menu.main]]
-    name       = "未来科技信息技术股份有限公司（北京）"
-    url        = ""
-    weight     = 1
-    parent     = "section.marketing"
+#[[menu.main]]
+#    name       = "未来科技信息技术股份有限公司（北京）"
+#    url        = ""
+#    weight     = 1
+#    parent     = "section.marketing"
 
 
 #-----------------------------------------------------------------
@@ -258,27 +272,27 @@ pluralizelisttitles = false
     post       = 1
 
 [[menu.main]]
-    name       = "パートナー①"
+    name       = "パートナー A"
     url        = ""
     weight     = 1
     parent     = "section.ap-home"
 
 [[menu.main]]
-    name       = "パートナー②"
+    name       = "パートナー B"
     url        = ""
     weight     = 2
     parent     = "section.ap-home"
     post       = 1
 
 [[menu.main]]
-    name       = "パートナー③"
+    name       = "パートナー C"
     url        = ""
     weight     = 3
     parent     = "section.ap-home"
     post       = 1
 
 [[menu.main]]
-    name       = "パートナー④"
+    name       = "パートナー D"
     url        = ""
     weight     = 4
     parent     = "section.ap-home"
@@ -287,14 +301,14 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "海外パートナー"
     identifier = "section.ap-blog"
-    url        = "/blog/"
+    url        = ""
     weight     = 1
     parent     = "menu.allpages"
     post       = 2
 
 [[menu.main]]
-    name       = "パートナーXX"
-    url        = "/blog/"
+    name       = "パートナー Z"
+    url        = ""
     weight     = 1
     parent     = "section.ap-blog"
 

@@ -69,8 +69,12 @@ This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/unive
 
 ## Installation
 
-* github  Create a new repository
-* git clone https://github.com/hst1189/miraitech.git
+Create a new repository(github):
+
+```
+$ github  Create a new repository
+$ git clone https://github.com/hst1189/miraitech.git
+```
 
 Go to the directory where you have your Hugo site and run:
 ```
@@ -81,7 +85,10 @@ $ echo "theme = 'hugo-universal-theme'" >> hugo.toml
 $ type hugo.toml
 $ hugo.toml設定
 $ hugo server -D
+
 ```
+* For more information read the official [setup guide](https://gohugo.io/installation/) of Hugo.
+
 
 Push to github:
 ```
@@ -93,8 +100,6 @@ $ git branch -a
 $ git push origin master
 ```
 
-
-For more information read the official [setup guide](https://gohugo.io/installation/) of Hugo.
 
 ## Configuration
 
