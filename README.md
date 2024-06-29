@@ -6,17 +6,15 @@ Universal is a clean and stylish website template built with [Bootstrap](https:/
 
 Demo site: [https://devcows.github.io/hugo-universal-theme](https://devcows.github.io/hugo-universal-theme/)
 
-Sponsor this project:
-- [https://paypal.me/ryanfox1985](https://paypal.me/ryanfox1985)
-- [https://www.patreon.com/ryanfox1985](https://www.patreon.com/ryanfox1985)
-- BTC wallet
-```
-1My6zRZA4YKdX78aiZKZhWUWfFmCSDafZ6
-```
-
 This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/universal-business-e-commerce-template) for training and fun. It has a very nice and customizable landing page, a comments system by Disqus, site search by Google, contact forms by Formspree, Google Analytics, and optional widgets for the sidebar.
 
 ![screenshot](https://raw.githubusercontent.com/devcows/hugo-universal-theme/master/images/screenshot.png)
+
+
+## Sponsor this project:
+- [https://paypal.me/ryanfox1985](https://paypal.me/ryanfox1985)
+- [https://www.patreon.com/ryanfox1985](https://www.patreon.com/ryanfox1985)
+
 
 
 ## Table of Contents
@@ -68,18 +66,35 @@ This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/unive
 * Google Analytics
 
 
+
 ## Installation
 
-Go to the directory where you have your Hugo site and run:
+* github  Create a new repository
+* git clone https://github.com/hst1189/miraitech.git
 
+Go to the directory where you have your Hugo site and run:
 ```
-$ mkdir themes
-$ cd themes
-$ git clone https://github.com/devcows/hugo-universal-theme
+$ hugo new site miraitech
+$ cd miraitech
+$ git submodule add https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
+$ echo "theme = 'hugo-universal-theme'" >> hugo.toml
+$ type hugo.toml
+$ hugo.toml設定
+$ hugo server -D
 ```
+
+Push to github:
+```
+$ git status
+$ git add .
+$ git commit -m "<message>"
+$ git log -n
+$ git branch -a
+$ git push origin master
+```
+
 
 For more information read the official [setup guide](https://gohugo.io/installation/) of Hugo.
-
 
 ## Configuration
 
