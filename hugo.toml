@@ -493,7 +493,7 @@ pluralizelisttitles = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more information take a look at the README.
-    title = "個性が豊富なチームメンバー"
+    title = "経験豊富なチームメンバー"
     subtitle = "メンバーからの一言"
 
 [params.see_more]

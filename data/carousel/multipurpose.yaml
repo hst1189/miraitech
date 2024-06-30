@@ -1,4 +1,12 @@
 weight: 1
-title: "Multipurpose responsive theme"
-description: "<p>Business. Corporate. Agency.<br>Portfolio. Blog. E-commerce.</p>"
-image: "img/carousel/template-homepage.png"
+title: "SI事業"
+description: >
+  <ul class="list-style-none">
+     <li>お客様の課題や事業の個別のニーズに合わせたオンリーメイドなシステムの構築</li>
+    <li>システムに係る基本構想の立案、業務要件の定義</li>
+    <li>システム基盤の設計および構築</li>
+    <li>システム機能の設計および開発</li>
+    <li>システム稼働確認およびシステム導入</li>
+    <li>システム稼働後の運用・保守</li>
+  </ul>
+image: "img/carousel/template-easy-code.png"

@@ -1,10 +1,12 @@
-weight: 3
-title: "Design"
+weight: 2
+title: "コンサルティング"
 description: >
   <ul class="list-style-none">
-    <li>Clean and elegant design</li>
-    <li>Full width and boxed mode</li>
-    <li>Easily readable Roboto font and awesome icons</li>
-    <li>7 preprepared colour variations</li>
+    <li>システム監査業務</li>
+    <li>Pマーク取得および更新のコンサルティング業務</li>
+    <li>ITSMS(ITサービスマネジメント)取得および更新のコンサルティング業務</li>
+    <li>ISMS(情報セキュリティマネジメント)取得および更新のコンサルティング業務</li>
+    <li>各種セキュリティ教育の実施</li>
+   <li>プロジェクト診断</li>
   </ul>
-image: "img/carousel/template-tablets-2.png"
+image: "img/carousel/template-homepage.png"

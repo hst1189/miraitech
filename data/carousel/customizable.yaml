@@ -1,9 +1,11 @@
 weight: 4
-title: "Easy to customize"
+title: "SES事業"
 description: >
   <ul class="list-style-none">
-    <li>7 preprepared colour variations.</li>
-    <li>Easily to change fonts</li>
+    <li>経験豊かなITエンジニアと求める企業のマッチング</li>
+    <li>プロジェクト単位の技術支援や開発支援</li>
+    <li>サーバー・ネットワーク構築などのインフラ支援</li>
+    <li>当社のサービスから課題解決や業務負荷を軽減し、より効率的で安定した運営を支援</li>
   </ul>
-image: "img/carousel/template-easy-code.png"
+image: "img/carousel/template-mac.png"
 href: ""
