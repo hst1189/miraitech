@@ -69,14 +69,14 @@ This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/unive
 
 ## Installation
 
-Create a new repository(github):
+1. Create a new repository(github):
 
 ```
 $ github  Create a new repository
 $ git clone https://github.com/hst1189/miraitech.git
 ```
 
-Go to the directory where you have your Hugo site and run:
+2. Go to the directory where you have your Hugo site and run:
 ```
 $ hugo new site miraitech
 $ cd miraitech
@@ -85,12 +85,12 @@ $ echo "theme = 'hugo-universal-theme'" >> hugo.toml
 $ type hugo.toml
 $ hugo.toml設定
 $ hugo server -D
-
 ```
 * For more information read the official [setup guide](https://gohugo.io/installation/) of Hugo.
 
 
-Push to github:
+
+4. Push to github:
 ```
 $ git status
 $ git add .
@@ -99,6 +99,34 @@ $ git log -n
 $ git branch -a
 $ git push origin master
 ```
+
+
+5. CI/CD to kinsta:
+５－１. kinsta⇔github連携：　認証と権限付与　https://kinsta.com/jp/docs/application-hosting/git-overview/github/
+
+
+５－２. Setup kinsta(https://github.com/kinsta/hello-world-hugo) :
+copy 2 file to  home directory
+package-lock.json
+package.json
+※do not forget to push to github 
+
+
+５－３. Hugo静的サイトをデプロイする
+　MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」を選択し、
+　サイト追加：静的サイトを追加（無料）
+　　　　　　　ブランチの選択（master）
+　　　　　　　表示名（site name）
+　「Gitサービスの接続」ウィンドウで「Gitサービスを接続する」をクリックして、GitHubアカウントにログインします。
+　リポジトリを選択して「続行」をクリックし、以下のビルド設定で静的サイトを追加します。
+　> ビルドコマンド：npm run build
+　> Node version：18.16.0
+　> 公開ディレクトリ：public
+　https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
+
+
+
+
 
 
 ## Configuration
