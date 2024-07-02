@@ -4,7 +4,7 @@ date = "2015-09-17T13:47:08+02:00"
 tags = ["go"]
 categories = ["programming"]
 banner = "img/banners/banner-3.jpg"
-facebook_author = "GolangSociety"
+author = ["GolangSociety"]
 +++
 
 ### 成功したPR事例に共通する要素
