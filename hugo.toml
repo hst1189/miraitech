@@ -24,6 +24,8 @@ paginate = 5
 # not pluralize title pages by default
 pluralizelisttitles = false
 
+
+
 [menu]
 
 
