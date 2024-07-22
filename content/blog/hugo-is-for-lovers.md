@@ -1,6 +1,6 @@
 +++
 title = "PRを、世の中にとってより価値あるものに"
-date = "2015-08-03T13:39:46+02:00"
+date = "2024-07-13T13:39:46+02:00"
 tags = ["hugo"]
 categories = ["pseudo"]
 banner = "img/banners/banner-4.jpg"

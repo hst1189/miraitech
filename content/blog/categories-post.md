@@ -1,10 +1,9 @@
 +++
 title = "国内のPR成功事例"
-date = "2021-08-01T21:29:20+02:00"
+date = "2024-07-01T21:29:20+02:00"
 tags = ["golang", "programming", "theme", "hugo"]
 categories = ["programming","lorem","pseudo"]
 banner = "img/banners/banner-1.jpg"
-authors = ["John Doe"]
 +++
 
 ### 事例1. 地方自治体による観光誘致のPR動画
@@ -30,4 +29,3 @@ YouTubeのコメント欄には、外国人から以下のような声が書き�
 >「スキップしないで最後まで見た初めての動画だ」
 >「音楽と映像がとても美しい」
 >「バルーンフェスタに行ってみたい」
- 

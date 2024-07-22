@@ -344,7 +344,7 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 2
     name = "Email"
-    url = "mailto:contact@miraitech.com"
+    url = "mailto:contact@miraitech-chiyoda.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [[menu.topbar]]
@@ -452,7 +452,7 @@ pluralizelisttitles = false
     enable = true
     text = """<p class="hidden-sm hidden-xs">Contact us on Tel: 03-6666-9232 or FAX: 03-6666-9767</p>
       <p class="hidden-md hidden-lg"><a href="tel:03-6666-9232" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:contact@miraitech.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:contact@miraitech-chiyoda.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
 
