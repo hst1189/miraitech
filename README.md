@@ -15,7 +15,12 @@ This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/unive
 ## Installation
 
 1. Create a new repository(github):
+https://github.com/kinsta/hello-world-hugo
+
+
 https://www.gohugo.org/doc/overview/quickstart/
+
+
 
 ```
 $ github  Create a new repository
@@ -56,16 +61,13 @@ https://www.gohugo.org/doc/overview/quickstart/
 
 ```
 $ hugo new content/about.md
-```
 新创建的文件在 content/about.md
-```
+
 $ hugo new content/post/first.md
-```
 新创建的文件在 content/post/first.md
 
 
 内容如下：
-```
 +++
 date = "2015-01-08T08:36:54-07:00"
 draft = true
@@ -73,8 +75,8 @@ title = "about"
 
 +++
 ```
-生成public文件夹
 ```
+生成public文件夹
 $ hugo -verbose
 ```
 
