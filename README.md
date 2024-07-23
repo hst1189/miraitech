@@ -103,6 +103,22 @@ package-lock.json
 package.json
 ※do not forget to push to github 
 
+新创建的站点目录结构如下：
+```
+ ▸ archetypes/
+ ▸ assets
+ ▸ content/     ←网页内容
+ ▸ data/
+ ▸ i18n/        ←多语言
+ ▸ layouts/
+ ▸ public/      ←静态网站（自动生成）
+ ▸ static/      ←css、img、js
+ ▸ themes/      ←模板
+   hugo.toml
+   package-lock.json ←kinsta
+   package.json      ←kinsta
+
+```
 
 ５－３. Hugo静的サイトをデプロイする
 　MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」を選択し、

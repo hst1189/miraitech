@@ -188,8 +188,8 @@ pluralizelisttitles = false
     parent     = "section.portfolio"
 
 [[menu.main]]
-    name       = "企業行動指針"
-    url        = ""
+    name       = "企業紹介"
+    url        = "/about/"
     weight     = 3
     parent     = "section.portfolio"
 
@@ -439,7 +439,7 @@ pluralizelisttitles = false
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>株式会社 MIRAI TECH</strong>
         <br>東京都千代田区神田駿河台1-5-6 713号室
-        <br>Tel: 03-6666-9232
+        <br>TEL: 03-6666-9232
         <br>FAX: 03-6666-9767
       </p>
       """
@@ -450,7 +450,8 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on Tel: 03-6666-9232 or FAX: 03-6666-9767</p>
+#    text = """<p class="hidden-sm hidden-xs">Contact us on　TEL: 03-6666-9232　or　FAX: 03-6666-9767</p>
+     text = """<p class="hidden-sm hidden-xs">一緒に未来を創造しよう！</p>
       <p class="hidden-md hidden-lg"><a href="tel:03-6666-9232" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
       <a href="mailto:contact@miraitech-chiyoda.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
