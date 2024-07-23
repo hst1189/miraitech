@@ -1,19 +1,122 @@
 # Universal Theme for Hugo
 
 [![Code Climate](https://codeclimate.com/github/devcows/hugo-universal-theme/badges/gpa.svg)](https://codeclimate.com/github/devcows/hugo-universal-theme)
-
 Universal is a clean and stylish website template built with [Bootstrap](https://getbootstrap.com/docs/3.4/getting-started/). It stands out with its clean design and elegant typography.
-
 Demo site: [https://devcows.github.io/hugo-universal-theme](https://devcows.github.io/hugo-universal-theme/)
-
 This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/universal-business-e-commerce-template) for training and fun. It has a very nice and customizable landing page, a comments system by Disqus, site search by Google, contact forms by Formspree, Google Analytics, and optional widgets for the sidebar.
-
 ![screenshot](https://raw.githubusercontent.com/devcows/hugo-universal-theme/master/images/screenshot.png)
-
 
 ## Sponsor this project:
 - [https://paypal.me/ryanfox1985](https://paypal.me/ryanfox1985)
 - [https://www.patreon.com/ryanfox1985](https://www.patreon.com/ryanfox1985)
+
+
+
+## Installation
+
+1. Create a new repository(github):
+https://www.gohugo.org/doc/overview/quickstart/
+
+```
+$ github  Create a new repository
+$ git clone https://github.com/hst1189/miraitech.git
+```
+
+
+2. Go to the directory where you have your Hugo site and run:
+```
+$ hugo new site miraitech
+```
+
+新创建的站点目录结构如下：
+```
+ ▸ archetypes/
+ ▸ assets
+ ▸ content/     ←网页内容
+ ▸ data/
+ ▸ i18n/        ←多语言
+ ▸ layouts/
+ ▸ public/      ←静态网站（自动生成）
+ ▸ static/      ←css、img、js
+ ▸ themes/      ←模板
+   hugo.toml
+```
+```
+$ cd miraitech
+$ git submodule add https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
+$ echo "theme = 'hugo-universal-theme'" >> hugo.toml
+$ type hugo.toml
+$ hugo.toml其他設定 （具体設定看后续）
+$ hugo server -D
+```
+
+
+3. 建立文件
+https://www.gohugo.org/doc/overview/quickstart/
+
+```
+$ hugo new content/about.md
+```
+新创建的文件在 content/about.md
+```
+$ hugo new content/post/first.md
+```
+新创建的文件在 content/post/first.md
+
+
+内容如下：
+```
++++
+date = "2015-01-08T08:36:54-07:00"
+draft = true
+title = "about"
+
++++
+```
+生成public文件夹
+```
+$ hugo -verbose
+```
+
+
+
+4. Push to github:
+```
+$ git status
+$ git add .
+$ git commit -m "<message>"
+$ git log -n
+$ git branch -a
+$ git push origin master
+```
+
+
+5. CI/CD to kinsta:
+５－１. kinsta⇔github連携：　認証と権限付与　https://kinsta.com/jp/docs/application-hosting/git-overview/github/
+
+
+５－２. Setup kinsta(https://github.com/kinsta/hello-world-hugo) :
+copy 2 file to  home directory
+package-lock.json
+package.json
+※do not forget to push to github 
+
+
+５－３. Hugo静的サイトをデプロイする
+　MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」を選択し、
+　サイト追加：静的サイトを追加（無料）
+　　　　　　　ブランチの選択（master）
+　　　　　　　表示名（site name）
+　「Gitサービスの接続」ウィンドウで「Gitサービスを接続する」をクリックして、GitHubアカウントにログインします。
+　リポジトリを選択して「続行」をクリックし、以下のビルド設定で静的サイトを追加します。
+　> ビルドコマンド：npm run build
+　> Node version：18.16.0
+　> 公開ディレクトリ：public
+　https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
+
+
+
+
 
 
 
@@ -64,68 +167,6 @@ This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/unive
 * Google search
 * Disqus comments
 * Google Analytics
-
-
-
-## Installation
-
-1. Create a new repository(github):
-
-```
-$ github  Create a new repository
-$ git clone https://github.com/hst1189/miraitech.git
-```
-
-2. Go to the directory where you have your Hugo site and run:
-```
-$ hugo new site miraitech
-$ cd miraitech
-$ git submodule add https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
-$ echo "theme = 'hugo-universal-theme'" >> hugo.toml
-$ type hugo.toml
-$ hugo.toml設定
-$ hugo server -D
-```
-* For more information read the official [setup guide](https://gohugo.io/installation/) of Hugo.
-
-
-
-4. Push to github:
-```
-$ git status
-$ git add .
-$ git commit -m "<message>"
-$ git log -n
-$ git branch -a
-$ git push origin master
-```
-
-
-5. CI/CD to kinsta:
-５－１. kinsta⇔github連携：　認証と権限付与　https://kinsta.com/jp/docs/application-hosting/git-overview/github/
-
-
-５－２. Setup kinsta(https://github.com/kinsta/hello-world-hugo) :
-copy 2 file to  home directory
-package-lock.json
-package.json
-※do not forget to push to github 
-
-
-５－３. Hugo静的サイトをデプロイする
-　MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」を選択し、
-　サイト追加：静的サイトを追加（無料）
-　　　　　　　ブランチの選択（master）
-　　　　　　　表示名（site name）
-　「Gitサービスの接続」ウィンドウで「Gitサービスを接続する」をクリックして、GitHubアカウントにログインします。
-　リポジトリを選択して「続行」をクリックし、以下のビルド設定で静的サイトを追加します。
-　> ビルドコマンド：npm run build
-　> Node version：18.16.0
-　> 公開ディレクトリ：public
-　https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
-
-
-
 
 
 
