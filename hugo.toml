@@ -24,6 +24,9 @@ paginate = 5
 # not pluralize title pages by default
 pluralizelisttitles = false
 
+# Configure Hugo to enable emoji processing in Markdown
+enableEmoji = true
+
 
 
 [menu]
@@ -31,11 +34,11 @@ pluralizelisttitles = false
 
 # Main menu
 #----------------------------------------------------
-[[menu.main]]
-    name       = "ホーム"
-    identifier = "menu.home"
-    url        = "/"
-    weight     = 1
+#[[menu.main]]
+#    name       = "ホーム"
+#    identifier = "menu.home"
+#    url        = "/"
+#    weight     = 1
 
 #[[menu.main]]
 #    name       = "Option 1: Default Page"
@@ -56,6 +59,108 @@ pluralizelisttitles = false
 #    parent     = "menu.home"
 
 
+
+
+#------------------------------------------------
+[[menu.main]]
+    name       = "会社概要"
+    identifier = "menu.portfolio"
+    url        = "/img/template-homepage.png"
+    weight     = 1
+
+[[menu.main]]
+    name       = "会社に関して"
+    identifier = "section.portfolio"
+    url        = ""
+    weight     = 1
+    parent     = "menu.portfolio"
+    post       = 1
+
+[[menu.main]]
+    name       = "会社概要"
+    url        = "/about/"
+    weight     = 1
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "企業理念"
+    url        = "/managementphilosophy/"
+    weight     = 2
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "経営方針・経営計画"
+    url        = "/"
+    weight     = 3
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "社長CEO挨拶"
+    url        = "/"
+    weight     = 4
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "役員紹介"
+    url        = "/"
+    weight     = 5
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "組織図"
+    url        = "/"
+    weight     = 6
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "歴史・沿革"
+    url        = "/"
+    weight     = 7
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "広告・動画ライブラリー"
+    url        = "/"
+    weight     = 8
+    parent     = "section.portfolio"
+
+
+[[menu.main]]
+    name       = "国内関連会社"
+    identifier = "section.about"
+    url        = ""
+    weight     = 2
+    parent     = "menu.portfolio"
+    post       = 2
+
+[[menu.main]]
+    name       = "関東本社"
+    url        = "/"
+    weight     = 1
+    parent     = "section.about"
+
+[[menu.main]]
+    name       = "関西支社"
+    url        = "/"
+    weight     = 2
+    parent     = "section.about"
+
+
+[[menu.main]]
+    name       = "海外子会社"
+    identifier = "section.marketing"
+    url        = ""
+    weight     = 3
+    parent     = "menu.portfolio"
+    post       = 2
+
+[[menu.main]]
+    name       = "未来科技信息技术股份有限公司（北京）"
+    url        = "/"
+    weight     = 1
+    parent     = "section.marketing"
+
+
 #----------------------------------------------------
 [[menu.main]]
     name       = "事業内容"
@@ -72,6 +177,55 @@ pluralizelisttitles = false
     post       = 1
 
 [[menu.main]]
+    name       = "インターネット・Web"
+    url        = "/"
+    weight     = 1
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "通信・無線"
+    url        = "/"
+    weight     = 2
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "仮想・インフラ構築"
+    url        = "/"
+    weight     = 3
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "ITコンサルティング"
+    url        = "/"
+    weight     = 4
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "アウトソーシング（SES）"
+    url        = "/"
+    weight     = 5
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "システム構築"
+    url        = "/"
+    weight     = 6
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "ソフトウェア開発・保守"
+    url        = "/"
+    weight     = 7
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "UI／UXデザイン等"
+    url        = "/"
+    weight     = 8
+    parent     = "section.shortcodes"
+
+
+[[menu.main]]
     name       = "サービス内容"
     identifier = "section.headervariations"
     url        = ""
@@ -80,182 +234,36 @@ pluralizelisttitles = false
     post       = 2
 
 [[menu.main]]
-    name       = "インターネット・Web"
-    url        = ""
-    weight     = 1
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "通信・無線"
-    url        = ""
-    weight     = 2
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "仮想・インフラ構築"
-    url        = ""
-    weight     = 3
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "ITコンサルティング"
-    url        = ""
-    weight     = 4
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "アウトソーシング（SES）"
-    url        = ""
-    weight     = 5
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "システム構築"
-    url        = ""
-    weight     = 6
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "ソフトウェア開発・保守"
-    url        = ""
-    weight     = 7
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "UI／UXデザイン等"
-    url        = ""
-    weight     = 8
-    parent     = "section.shortcodes"
-
-
-
-[[menu.main]]
     name       = "SNSマーケティング"
-    url        = ""
+    url        = "/"
     weight     = 1
     parent     = "section.headervariations"
 
 [[menu.main]]
     name       = "SEO／SEM適合"
-    url        = ""
+    url        = "/"
     weight     = 2
     parent     = "section.headervariations"
 
 [[menu.main]]
     name       = "ヘルプデスク"
-    url        = ""
+    url        = "/"
     weight     = 3
     parent     = "section.headervariations"
 
 [[menu.main]]
     name       = "PCレンタル"
-    url        = ""
+    url        = "/"
     weight     = 4
     parent     = "section.headervariations"
 
 [[menu.main]]
     name       = "オフィスデザイン等"
-    url        = ""
+    url        = "/"
     weight     = 5
     parent     = "section.headervariations"
 
 
-#------------------------------------------------
-[[menu.main]]
-    name       = "会社概要"
-    identifier = "menu.portfolio"
-    url        = "/img/template-homepage.png"
-    weight     = 3
-
-[[menu.main]]
-    name       = "会社概要"
-    identifier = "section.portfolio"
-    url        = ""
-    weight     = 1
-    parent     = "menu.portfolio"
-    post       = 1
-
-[[menu.main]]
-    name       = "企業紹介"
-    url        = "/about/"
-    weight     = 1
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "企業理念"
-    url        = ""
-    weight     = 2
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "経営方針・経営計画"
-    url        = ""
-    weight     = 3
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "社長CEO挨拶"
-    url        = ""
-    weight     = 4
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "役員紹介"
-    url        = ""
-    weight     = 5
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "組織図"
-    url        = ""
-    weight     = 6
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "歴史・沿革"
-    url        = ""
-    weight     = 7
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "広告・動画ライブラリー"
-    url        = ""
-    weight     = 8
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "国内関連会社"
-    identifier = "section.about"
-    url        = ""
-    weight     = 2
-    parent     = "menu.portfolio"
-    post       = 2
-
-[[menu.main]]
-    name       = "関東本社"
-    url        = ""
-    weight     = 1
-    parent     = "section.about"
-
-[[menu.main]]
-    name       = "関西支社"
-    url        = ""
-    weight     = 2
-    parent     = "section.about"
-
-[[menu.main]]
-    name       = "海外子会社"
-    identifier = "section.marketing"
-    url        = ""
-    weight     = 3
-    parent     = "menu.portfolio"
-    post       = 2
-
-#[[menu.main]]
-#    name       = "未来科技信息技术股份有限公司（北京）"
-#    url        = ""
-#    weight     = 1
-#    parent     = "section.marketing"
 
 
 #-----------------------------------------------------------------
@@ -263,7 +271,7 @@ pluralizelisttitles = false
     name       = "パートナー企業"
     identifier = "menu.allpages"
     url        = "/img/template-partner.png"
-    weight     = 4
+    weight     = 3
 
 [[menu.main]]
     name       = "国内パートナー"
@@ -275,27 +283,27 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "パートナー A"
-    url        = ""
+    url        = "/"
     weight     = 1
     parent     = "section.ap-home"
 
 [[menu.main]]
     name       = "パートナー B"
-    url        = ""
+    url        = "/"
     weight     = 2
     parent     = "section.ap-home"
     post       = 1
 
 [[menu.main]]
     name       = "パートナー C"
-    url        = ""
+    url        = "/"
     weight     = 3
     parent     = "section.ap-home"
     post       = 1
 
 [[menu.main]]
     name       = "パートナー D"
-    url        = ""
+    url        = "/"
     weight     = 4
     parent     = "section.ap-home"
     post       = 1
@@ -310,7 +318,7 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "パートナー Z"
-    url        = ""
+    url        = "/"
     weight     = 1
     parent     = "section.ap-blog"
 
@@ -319,21 +327,22 @@ pluralizelisttitles = false
     name       = "お知らせ"
     identifier = "menu.blog"
     url        = "/blog/"
-    weight     = 5
+    weight     = 4
 
 [[menu.main]]
     name       = "よくある質問"
     identifier = "menu.faq"
     url        = "/faq/"
-    weight     = 6
+    weight     = 5
 
 [[menu.main]]
     name       = "お問い合わせ"
     identifier = "contact"
     url        = "/contact/"
-    weight     = 7
+    weight     = 6
 
 
+#----------------------------------------------
 # Topbar social links menu
 [[menu.topbar]]
     weight = 1
@@ -361,10 +370,33 @@ pluralizelisttitles = false
 
 [[menu.topbar]]
     weight = 5
+    name = "Linkedin"
+    url = "http://linkedin.com"
+    pre = "<i class='fab fa-2x fa-linkedin'></i>"
+
+[[menu.topbar]]
+    weight = 6
+    name = "Instagram"
+    url = "http://instagram.com"
+    pre = "<i class='fab fa-2x fa-instagram'></i>"
+
+[[menu.topbar]]
+    weight = 7
+    name = "Youtube"
+    url = "http://youtube.com"
+    pre = "<i class='fab fa-2x fa-youtube'></i>"
+
+[[menu.topbar]]
+    weight = 8
     name = "GitHub"
-    url = ""
+    url = "http://github.com"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
+[[menu.topbar]]
+    weight = 9
+    name = "Docker"
+    url = "http://docker.com"
+    pre = "<i class='fab fa-2x fa-docker'></i>"
 
 
 [params]
@@ -451,7 +483,7 @@ pluralizelisttitles = false
 [params.topbar]
     enable = true
 #    text = """<p class="hidden-sm hidden-xs">Contact us on　TEL: 03-6666-9232　or　FAX: 03-6666-9767</p>
-     text = """<p class="hidden-sm hidden-xs">一緒に未来を創造しよう！</p>
+     text = """<p class="hidden-sm hidden-xs">　一緒に未来を創造しよう！　</p>
       <p class="hidden-md hidden-lg"><a href="tel:03-6666-9232" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
       <a href="mailto:contact@miraitech-chiyoda.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>

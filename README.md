@@ -136,8 +136,8 @@ package.json
 　https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
 
 
-
-
+## emoji
+https://gohugo.io/quick-reference/emojis/
 
 
 
