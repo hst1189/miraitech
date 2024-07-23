@@ -114,6 +114,9 @@ package.json
 　> ビルドコマンド：npm run build
 　> Node version：18.16.0
 　> 公開ディレクトリ：public
+　> indexファイル：index.html
+　> エラーファイル：404.html
+
 　https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
 
 
