@@ -176,8 +176,8 @@ pluralizelisttitles = false
     post       = 1
 
 [[menu.main]]
-    name       = "社長CEO挨拶"
-    url        = ""
+    name       = "企業紹介"
+    url        = "/about/"
     weight     = 1
     parent     = "section.portfolio"
 
@@ -188,13 +188,13 @@ pluralizelisttitles = false
     parent     = "section.portfolio"
 
 [[menu.main]]
-    name       = "企業紹介"
-    url        = "/about/"
+    name       = "経営方針・経営計画"
+    url        = ""
     weight     = 3
     parent     = "section.portfolio"
 
 [[menu.main]]
-    name       = "経営方針・経営計画"
+    name       = "社長CEO挨拶"
     url        = ""
     weight     = 4
     parent     = "section.portfolio"
@@ -437,8 +437,8 @@ pluralizelisttitles = false
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     contact_url = "/contact"
-    address = """<p class="text-uppercase"><strong>株式会社 MIRAI TECH</strong>
-        <br>東京都千代田区神田駿河台1-5-6 713号室
+    address = """<p class="text-uppercase"><strong>株式会社MIRAI TECH</strong>
+        <br>東京都千代田区神田駿河台1-5-6-713
         <br>TEL: 03-6666-9232
         <br>FAX: 03-6666-9767
       </p>
