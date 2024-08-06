@@ -1,40 +1,45 @@
 # Universal Theme for Hugo
 
 [![Code Climate](https://codeclimate.com/github/devcows/hugo-universal-theme/badges/gpa.svg)](https://codeclimate.com/github/devcows/hugo-universal-theme)
-Universal is a clean and stylish website template built with [Bootstrap](https://getbootstrap.com/docs/3.4/getting-started/). It stands out with its clean design and elegant typography.
-Demo site: [https://devcows.github.io/hugo-universal-theme](https://devcows.github.io/hugo-universal-theme/)
-This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/universal-business-e-commerce-template) for training and fun. It has a very nice and customizable landing page, a comments system by Disqus, site search by Google, contact forms by Formspree, Google Analytics, and optional widgets for the sidebar.
+- Universal is a clean and stylish website template built with [Bootstrap](https://getbootstrap.com/docs/3.4/getting-started/). It stands out with its clean design and elegant typography.
+- Demo site: [https://devcows.github.io/hugo-universal-theme](https://devcows.github.io/hugo-universal-theme/)
+- This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/universal-business-e-commerce-template) for training and fun.
+- It has a very nice and customizable landing page, a comments system by Disqus, site search by Google, contact forms by Formspree, Google Analytics, and optional widgets for the sidebar.
 ![screenshot](https://raw.githubusercontent.com/devcows/hugo-universal-theme/master/images/screenshot.png)
-
-## Sponsor this project:
-- [https://paypal.me/ryanfox1985](https://paypal.me/ryanfox1985)
-- [https://www.patreon.com/ryanfox1985](https://www.patreon.com/ryanfox1985)
-
 
 
 ## Installation
 
-1. Create a new repository(github):
-https://github.com/kinsta/hello-world-hugo
+### 1. 安装Hugo  设置环境变量PATH
 
-
+```
 https://www.gohugo.org/doc/overview/quickstart/
 
+hugo_0.127.0_windows-amd64.zip
+ ▸ hugo.exe
+ ▸ LICENSE
+ ▸ README.md
+```
 
+### 2. github创建一个新的空仓库
 
 ```
 $ github  Create a new repository
+```
+
+### 3. Clone到本地
+
+```
 $ git clone https://github.com/hst1189/miraitech.git
 ```
 
+### 4. 创建站点
 
-2. Go to the directory where you have your Hugo site and run:
 ```
 $ hugo new site miraitech
-```
 
 新创建的站点目录结构如下：
-```
+▸ miraitech/
  ▸ archetypes/
  ▸ assets
  ▸ content/     ←网页内容
@@ -44,30 +49,37 @@ $ hugo new site miraitech
  ▸ public/      ←静态网站（自动生成）
  ▸ static/      ←css、img、js
  ▸ themes/      ←模板
-   hugo.toml
+   hugo.toml    ←配置文件
 ```
+
+### 5. 进入站点目录 修改配置文件hugo.toml
+
 ```
 $ cd miraitech
 $ git submodule add https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
 $ echo "theme = 'hugo-universal-theme'" >> hugo.toml
 $ type hugo.toml
-$ hugo.toml其他設定 （具体設定看后续）
+$ hugo.toml其他設定 （具体看后述）
 $ hugo server -D
+
+http://localhost:1313/ 
 ```
 
 
-3. 建立文件
-https://www.gohugo.org/doc/overview/quickstart/
+### 6. 创建文件
 
 ```
 $ hugo new content/about.md
 新创建的文件在 content/about.md
++++
+date = "2015-01-08T08:36:54-07:00"
+draft = true
+title = "about"
+
++++
 
 $ hugo new content/post/first.md
 新创建的文件在 content/post/first.md
-
-
-内容如下：
 +++
 date = "2015-01-08T08:36:54-07:00"
 draft = true
@@ -75,105 +87,75 @@ title = "about"
 
 +++
 ```
-```
-生成public文件夹
-$ hugo -verbose
-```
 
 
+### 7. Push to github:
 
-4. Push to github:
 ```
 $ git status
 $ git add .
 $ git commit -m "<message>"
+$ git push origin master
+
+参考命令：
 $ git log -n
 $ git branch -a
-$ git push origin master
+$ git remote -v
 ```
 
 
-5. CI/CD to kinsta:
-５－１. kinsta⇔github連携：　認証と権限付与　https://kinsta.com/jp/docs/application-hosting/git-overview/github/
+### 8. CI/CD to kinsta
 
+#### 8-1. kinsta⇔github連携
 
-５－２. Setup kinsta(https://github.com/kinsta/hello-world-hugo) :
+認証と権限付与　https://kinsta.com/jp/docs/application-hosting/git-overview/github/
+![GitHubアカウントへのアクセスをKinsta GitHubアプリケーションに許可します。](https://kinsta.com/wp-content/uploads/2023/11/application-authorize-mykinsta-github.png)
+
+#### 8-2. Setup kinsta
+
+```
+https://github.com/kinsta/hello-world-hugo
 copy 2 file to  home directory
-package-lock.json
-package.json
+ ▸ package-lock.json
+ ▸ package.json
 ※do not forget to push to github 
 
 新创建的站点目录结构如下：
-```
+▸ miraitech/
  ▸ archetypes/
  ▸ assets
- ▸ content/     ←网页内容
+ ▸ content/
  ▸ data/
- ▸ i18n/        ←多语言
+ ▸ i18n/
  ▸ layouts/
- ▸ public/      ←静态网站（自动生成）
- ▸ static/      ←css、img、js
- ▸ themes/      ←模板
-   hugo.toml
-   package-lock.json ←kinsta
-   package.json      ←kinsta
-
+ ▸ public/
+ ▸ static/
+ ▸ themes/
+ ▸ hugo.toml
+ ▸ package-lock.json  ←追加
+ ▸ package.json       ←追加
 ```
 
-５－３. Hugo静的サイトをデプロイする
-　MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」を選択し、
-　サイト追加：静的サイトを追加（無料）
-　　　　　　　ブランチの選択（master）
-　　　　　　　表示名（site name）
-　「Gitサービスの接続」ウィンドウで「Gitサービスを接続する」をクリックして、GitHubアカウントにログインします。
-　リポジトリを選択して「続行」をクリックし、以下のビルド設定で静的サイトを追加します。
-　> ビルドコマンド：npm run build
-　> Node version：18.16.0
-　> 公開ディレクトリ：public
-　> indexファイル：index.html
-　> エラーファイル：404.html
+#### 8-3. Hugo静的サイトをデプロイ
 
-　https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
+```
+MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」GitHubリポジトリを入力 ＞ 自動デプロイ☑ ＞ 表示名（サイト名）入力
+以下のビルド設定で
+　- ビルドコマンド：npm run build
+　- Node version：18.16.0
+　- 公開ディレクトリ：public
+　- indexファイル：index.html
+　- エラーファイル：404.html
+※package.jsonファイルで定義された依存関係は、デプロイメントプロセス中に自動インストールされます。
+
+参考： https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
+```
 
 
 ## emoji
+
 https://gohugo.io/quick-reference/emojis/
 
-
-
-## Table of Contents
-
-- [Universal Theme for Hugo](#universal-theme-for-hugo)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-    - [Language](#language)
-    - [Style](#style)
-    - [Comments](#comments)
-    - [Google Analytics](#google-analytics)
-    - [Logo](#logo)
-    - [Contact form](#contact-form)
-    - [Menu](#menu)
-    - [Sidebar widgets](#sidebar-widgets)
-    - [Top bar](#top-bar)
-    - [Blog post thumbnails](#blog-post-thumbnails)
-    - [Landing page](#landing-page)
-      - [Carousel](#carousel)
-      - [Features](#features-1)
-      - [Testimonials](#testimonials)
-      - [See more](#see-more)
-      - [Clients](#clients)
-      - [Recent posts](#recent-posts)
-      - [Footer](#footer)
-        - [About us](#about-us)
-        - [Recent posts](#recent-posts-1)
-        - [Contact](#contact)
-    - [Meta tags](#meta-tags)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Thanks](#thanks)
 
 ## Features
 
@@ -807,3 +789,10 @@ This port is released under the MIT License. Check the [original theme license](
 ## Thanks
 
 Thanks to [Steve Francia](https://github.com/spf13) for creating Hugo and the awesome community around the project. And also thanks to [Bootstrapious](http://bootstrapious.com/) for creating this awesome theme.
+
+
+## Sponsor this project
+
+- [https://paypal.me/ryanfox1985](https://paypal.me/ryanfox1985)
+- [https://www.patreon.com/ryanfox1985](https://www.patreon.com/ryanfox1985)
+
