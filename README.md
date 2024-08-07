@@ -19,12 +19,14 @@ hugo_0.127.0_windows-amd64.zip
  ▸ hugo.exe
  ▸ LICENSE
  ▸ README.md
+
+设置环境变量PATH
 ```
 
 ### 2. github创建一个新的空仓库
 
 ```
-$ github  Create a new repository
+$ github  创建一个新的空仓库
 ```
 
 ### 3. Clone到本地
@@ -62,7 +64,7 @@ $ type hugo.toml
 $ hugo.toml其他設定 （具体看后述）
 $ hugo server -D
 
-http://localhost:1313/ 
+调试 http://localhost:1313/ 
 ```
 
 
