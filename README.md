@@ -1,92 +1,90 @@
-# Universal Theme for Hugo
+# Installation
 
-[![Code Climate](https://codeclimate.com/github/devcows/hugo-universal-theme/badges/gpa.svg)](https://codeclimate.com/github/devcows/hugo-universal-theme)
-- Universal is a clean and stylish website template built with [Bootstrap](https://getbootstrap.com/docs/3.4/getting-started/). It stands out with its clean design and elegant typography.
-- Demo site: [https://devcows.github.io/hugo-universal-theme](https://devcows.github.io/hugo-universal-theme/)
-- This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/universal-business-e-commerce-template) for training and fun.
-- It has a very nice and customizable landing page, a comments system by Disqus, site search by Google, contact forms by Formspree, Google Analytics, and optional widgets for the sidebar.
-![screenshot](https://raw.githubusercontent.com/devcows/hugo-universal-theme/master/images/screenshot.png)
+### 1. 下载Hugo，设置环境变量PATH
 
-
-## Installation
-
-### 1. 安装Hugo  设置环境变量PATH
+> https://github.com/gohugoio/hugo/releases
 
 ```
-https://www.gohugo.org/doc/overview/quickstart/
+hugo_0.135.0_windows-amd64.zip　　※解压缩
+ ― hugo.exe
+ ― LICENSE
+ ― README.md
 
-hugo_0.127.0_windows-amd64.zip
- ▸ hugo.exe
- ▸ LICENSE
- ▸ README.md
-
-设置环境变量PATH
+设置环境变量PATH，将hugo.exe加入
 ```
+
 
 ### 2. github创建一个新的空仓库
 
 ```
 $ github  创建一个新的空仓库
+例如：https://github.com/hst1189/miraitech.git
 ```
 
-### 3. Clone到本地
+
+### 3. 将上述仓库Clone到本地
 
 ```
 $ git clone https://github.com/hst1189/miraitech.git
 ```
 
-### 4. 创建站点
+
+### 4. 创建Hugo站点
+
+> 参考： https://www.gohugo.org/doc/overview/quickstart/
 
 ```
 $ hugo new site miraitech
 
-新创建的站点目录结构如下：
-▸ miraitech/
- ▸ archetypes/
- ▸ assets
- ▸ content/     ←网页内容
- ▸ data/
- ▸ i18n/        ←多语言
- ▸ layouts/
- ▸ public/      ←静态网站（自动生成）
- ▸ static/      ←css、img、js
- ▸ themes/      ←模板
-   hugo.toml    ←配置文件
+新创建好的站点目录结构如下：
+
+miraitech/
+  ― archetypes/
+  ― assets
+  ― content/     ←网页内容
+  ― data/
+  ― i18n/        ←多语言
+  ― layouts/
+  ― public/      ←静态网站（自动生成）
+  ― static/      ←css、img、js
+  ― themes/      ←模板
+  ― hugo.toml    ←配置文件
 ```
 
-### 5. 进入站点目录 修改配置文件hugo.toml
+
+### 5. 进入站点目录，修改配置文件hugo.toml
 
 ```
 $ cd miraitech
-$ git submodule add https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
-$ echo "theme = 'hugo-universal-theme'" >> hugo.toml
-$ type hugo.toml
-$ hugo.toml其他設定 （具体看后述）
-$ hugo server -D
+$ git submodule add https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme    ※下载风格模板
+$ 修改hugo.toml
+$ theme = 'hugo-universal-theme'  ※应用风格模板
+$ 其他設定hugo.toml   　　　　　　　※具体看后述
+$ hugo server -D　　　　　　　　　　※启动服务器
 
-调试 http://localhost:1313/ 
+Web Server is available at http://localhost:1313
+Press Ctrl+C to stop
 ```
 
 
 ### 6. 创建文件
 
 ```
-$ hugo new content/about.md
 新创建的文件在 content/about.md
+$ hugo new content/about.md
 +++
 date = "2015-01-08T08:36:54-07:00"
 draft = true
 title = "about"
-
 +++
 
-$ hugo new content/post/first.md
+
 新创建的文件在 content/post/first.md
+$ hugo new content/post/first.md
 +++
 date = "2015-01-08T08:36:54-07:00"
 draft = true
 title = "about"
-
 +++
 ```
 
@@ -108,10 +106,11 @@ $ git remote -v
 
 ### 8. CI/CD to kinsta
 
-#### 8-1. kinsta⇔github連携
+#### 8-1. kinsta⇔github連携（設定は一回のみ済ませば）
 
 認証と権限付与　https://kinsta.com/jp/docs/application-hosting/git-overview/github/
 ![GitHubアカウントへのアクセスをKinsta GitHubアプリケーションに許可します。](https://kinsta.com/wp-content/uploads/2023/11/application-authorize-mykinsta-github.png)
+
 
 #### 8-2. Setup kinsta
 
@@ -141,14 +140,14 @@ copy 2 file to  home directory
 #### 8-3. Hugo静的サイトをデプロイ
 
 ```
-MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追加」＞「GitHub」GitHubリポジトリを入力 ＞ 自動デプロイ☑ ＞ 表示名（サイト名）入力
+MyKinstaログイン ＞ ダッシュボード ＞「サービス追加」 ＞「静的サイト」＞GitHubリポジトリを選択 ＞ 自動デプロイ☑ ＞ 表示名（サイト名）入力
 以下のビルド設定で
 　- ビルドコマンド：npm run build
 　- Node version：18.16.0
 　- 公開ディレクトリ：public
 　- indexファイル：index.html
 　- エラーファイル：404.html
-※package.jsonファイルで定義された依存関係は、デプロイメントプロセス中に自動インストールされます。
+　※package.jsonファイルで定義された依存関係は、デプロイメントプロセス中に自動インストールされます。
 
 参考： https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
 ```
@@ -157,6 +156,18 @@ MyKinstaのダッシュボードで、「静的サイト」＞「サイトの追
 ## emoji
 
 https://gohugo.io/quick-reference/emojis/
+
+
+
+
+# Universal Theme for Hugo
+
+[![Code Climate](https://codeclimate.com/github/devcows/hugo-universal-theme/badges/gpa.svg)](https://codeclimate.com/github/devcows/hugo-universal-theme)
+- Universal is a clean and stylish website template built with [Bootstrap](https://getbootstrap.com/docs/3.4/getting-started/). It stands out with its clean design and elegant typography.
+- Demo site: [https://devcows.github.io/hugo-universal-theme](https://devcows.github.io/hugo-universal-theme/)
+- This Hugo theme was ported from [Bootstrapious](http://bootstrapious.com/p/universal-business-e-commerce-template) for training and fun.
+- It has a very nice and customizable landing page, a comments system by Disqus, site search by Google, contact forms by Formspree, Google Analytics, and optional widgets for the sidebar.
+![screenshot](https://raw.githubusercontent.com/devcows/hugo-universal-theme/master/images/screenshot.png)
 
 
 ## Features
