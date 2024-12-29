@@ -143,13 +143,14 @@ copy 2 file to  home directory
 MyKinstaログイン ＞ ダッシュボード ＞「サービス追加」 ＞「静的サイト」＞GitHubリポジトリを選択 ＞ 自動デプロイ☑ ＞ 表示名（サイト名）入力
 以下のビルド設定で
 　- ビルドコマンド：npm run build
-　- Node version：18.16.0
+　- Node version：18.16.0 ⇒ lts
+  - ルートディレクトリ：none
 　- 公開ディレクトリ：public
 　- indexファイル：index.html
 　- エラーファイル：404.html
-　※package.jsonファイルで定義された依存関係は、デプロイメントプロセス中に自動インストールされます。
-
-参考： https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
+　
+  参考： https://kinsta.com/jp/docs/static-site-hosting/static-site-quick-start/hugo-static-site-example/
+  ※package.jsonファイルで定義された依存関係は、デプロイメントプロセス中に自動インストールされます。
 ```
 
 
