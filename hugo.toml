@@ -1,12 +1,8 @@
-# Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-baseurl = "https://miraitech.github.io/" 
+baseurl = "https://mirai-tech.us.kg/" 
 title = "Mirai Tech"
 theme = "hugo-universal-theme"
-# themesDir = "../.."
 
 languageCode = "ja-jp"
-
-# Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "ja"
 
 # Enable comments by entering your Disqus shortname
