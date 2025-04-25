@@ -15,7 +15,7 @@ googleAnalytics = ""
 summaryLength = 30
 
 # Define the number of posts per page
-paginate = 5
+pagination.pagerSize = 5
 
 # not pluralize title pages by default
 pluralizelisttitles = false
