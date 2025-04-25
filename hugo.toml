@@ -6,7 +6,7 @@ languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 
 # Enable comments by entering your Disqus shortname
-Config.Services.Disqus.Shortname = "guest"
+# Config.Services.Disqus.Shortname = "guest"
 
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
