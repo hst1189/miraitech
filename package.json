@@ -12,9 +12,11 @@
     "author": "",
     "license": "Apache License 2.0",
     "devDependencies": {
-        "hugo-bin": "^0.115.0"
+        "hugo-bin": "^0.115.0",
+        "cross-spawn": ">=7.0.5"
     },
     "dependencies": {
-        "serve": "^14.2.1"
+        "serve": "^14.2.1",
+        "cross-spawn": ">=7.0.5"
     }
 }
