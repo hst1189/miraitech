@@ -15,12 +15,14 @@
         "hugo-bin": "^0.115.0",
         "cross-spawn": ">=7.0.5",
         "path-to-regexp": ">=3.3.0",
-        "braces": ">=3.0.3"
+        "braces": ">=3.0.3",
+        "brace-expansion": ">=1.1.12"
     },
     "dependencies": {
         "serve": "^14.2.1",
         "cross-spawn": ">=7.0.5",
         "path-to-regexp": ">=3.3.0",
-        "braces": ">=3.0.3"
+        "braces": ">=3.0.3",
+        "brace-expansion": ">=1.1.12"
     }
 }
