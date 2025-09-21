@@ -1,4 +1,4 @@
-baseurl = "https://grapehut.xyz/mirai-tech/" 
+baseurl = "https://test.com" 
 title = "Mirai Tech"
 theme = "hugo-universal-theme"
 
